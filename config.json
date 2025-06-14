@@ -1,0 +1,19 @@
+{
+    "name": "go",
+    "dockerfile": "./Dockerfile",
+    "DocumentRoot": "/usr/app",
+    "volumes": [
+        "./:/usr/app"
+    ],
+    "env": {
+        "IMAGE_VERSION": {
+            "type": "string",
+            "required": true
+        },
+        "GO_RUN": {
+            "type": "string",
+            "required": true,
+            "default": "go run src/main.go"
+        }
+    }
+}
