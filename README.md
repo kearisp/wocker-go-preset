@@ -13,3 +13,12 @@ You can add this preset to an existing Wocker project:
 ```shell
 ws preset:install go
 ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+_This preset is part of the [Wocker](https://kearisp.github.io/wocker) ecosystem._
+
