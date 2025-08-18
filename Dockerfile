@@ -3,14 +3,15 @@ ARG IMAGE_VERSION=latest
 FROM golang:${IMAGE_VERSION}
 
 LABEL org.wocker.preset="node" \
-      org.wocker.version="1.0.1" \
+      org.wocker.version="1.0.2" \
       org.wocker.description="Preset for go projects"
 
 ARG UID=1000
 ARG GID=1000
 ARG USER=wocker
 
-ENV GOPATH="/usr/app" \
+ENV TZ=Europe/Kyiv \
+    GOPATH="/usr/app" \
     GO_RUN="go run main.go"
 
 COPY ./.wocker/etc/wocker-init.d /etc/wocker-init.d
